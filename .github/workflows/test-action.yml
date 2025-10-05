@@ -1,1 +1,16 @@
+name: Test Action
+
+on:
+  workflow_dispatch:   # allows you to run manually
+  push:               # also runs on push
+
+jobs:
+  test:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Checkout repository
+        uses: actions/checkout@v4
+
+      - name: 24f2006582@ds.study.iitm.ac.in
+        run: echo "Hello, world!"
 
